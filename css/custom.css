@@ -1,0 +1,37 @@
+/* 只调整直接嵌入的 SVG 图标 */
+.widget-kratos-social .social-links svg {
+    width: 1.9em;   /* 你想要的大小 */
+    height: 1.9em;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  /* 只调整 Font Awesome 图标 */
+  .widget-kratos-social .social-links i {
+    font-size: 2em;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  /* 只调整 img 图片（如本地PNG/JPG/SVG用<img>标签插入） */
+  .widget-kratos-social .social-links img {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    object-fit: contain;
+    display: inline-block;
+  }
+
+/* 调整社交图标之间的距离 */
+.widget-kratos-social .social-links a {
+    margin: 0 0.5em;  /* 左右间距0.5em，可根据需要调整 */
+  }
+
+  /* 设置首页 banner 的高度 */
+.kratos-cover.kratos-cover-2 {
+    height: 320px;   /* 你想要的高度，比如 320px、400px、30vh 等 */
+    min-height: 200px; /* 可选，设置最小高度 */
+    max-height: 500px; /* 可选，设置最大高度 */
+  }
