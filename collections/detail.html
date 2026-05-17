@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="images/decknock/8.jpg">
   
-  <title>标签: 算法题 | 秋月与风</title>
+  <title>条目详情 | 秋月与风</title>
   
   <meta name="author" content="decknock" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -17,12 +17,12 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="欢迎来到decknock的博客！">
+  <meta name="description" content="← 返回列表                  .collection-detail-page {     max-width: 900px;     margin: 0 auto; } .back-btn {     display: inline-block;     margin-bottom: 20px;     color: #667eea;     text">
 <meta property="og:type" content="website">
-<meta property="og:title" content="标签: 算法题">
-<meta property="og:url" content="http://example.com/tags/%E7%AE%97%E6%B3%95%E9%A2%98/index.html">
+<meta property="og:title" content="条目详情">
+<meta property="og:url" content="http://example.com/collections/detail.html">
 <meta property="og:site_name" content="秋月与风">
-<meta property="og:description" content="欢迎来到decknock的博客！">
+<meta property="og:description" content="← 返回列表                  .collection-detail-page {     max-width: 900px;     margin: 0 auto; } .back-btn {     display: inline-block;     margin-bottom: 20px;     color: #667eea;     text">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/decknock/8.jpg">
 <meta property="article:author" content="decknock">
@@ -101,6 +101,10 @@
                                             <li><a href="/friends/"><i class="fa fa-paw"></i>友链</a></li>
                                         
                                     
+                                        
+                                            <li><a href="/collections/"><i class="fa fa-bookmark"></i>收藏</a></li>
+                                        
+                                    
                                 
                             </ul>
                         </nav>
@@ -141,93 +145,296 @@
 
         
 
-            <!-- Breadcrumb for tag & category page -->
+            <article itemscope itemtype="https://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <div class="kratos-post-content">
+            <h2 class="title-h2 text-center" itemprop="name headline">条目详情</h2>
+            <div itemprop="articleBody"><div class="collection-detail-page">
+    <div class="detail-header">
+        <a href="/collections/" class="back-btn">← 返回列表</a>
+        <div id="detailContent"></div>
+    </div>
+</div>
 
-    <article class="kratos-hentry kratos-entry-border-new clearfix">
-        <div class="kratos-breadcrumb">
-            <a href="/">
-                <i class="fa fa-home"></i>
-            </a>
-            <i class="fa fa-angle-right"></i>
-            
-                <a href="/tags/">
-                    标签
-                </a>
-                <i class="fa fa-angle-right"></i>
-                <a href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98">
-                    算法题
-                </a>
-            
-            
-        </div>
-    </article>
+<style>
+.collection-detail-page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.back-btn:hover {
+    color: #764ba2;
+}
+.detail-header {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.detail-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+.detail-cover {
+    flex-shrink: 0;
+}
+.detail-cover img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.detail-info {
+    flex: 1;
+}
+.detail-title {
+    font-size: 2.5em;
+    color: #667eea;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.detail-intro {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.detail-body {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #e0e0e0;
+}
+.detail-body h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+.detail-body-content {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
+    white-space: pre-wrap;
+}
+.edit-mode {
+    border: 2px dashed #667eea;
+    border-radius: 8px;
+    padding: 20px;
+    background: #f9f9ff;
+}
+.edit-form {
+    display: grid;
+    gap: 15px;
+}
+.form-group {
+    display: grid;
+    gap: 8px;
+}
+.form-group label {
+    font-weight: 600;
+    color: #333;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: inherit;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+.btn-secondary {
+    background: #f0f0f0;
+    color: #333;
+}
+.btn:hover {
+    transform: translateY(-2px);
+}
+.edit-toggle {
+    margin-top: 20px;
+    text-align: right;
+}
+@media (max-width: 768px) {
+    .detail-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .detail-title {
+        font-size: 2em;
+    }
+}
+</style>
 
-
-
-
+<script type="text/javascript">
+(function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const itemId = urlParams.get('id');
+    const isAdd = urlParams.get('add') === 'new';
     
+    function loadCollections() {
+        const saved = localStorage.getItem('collections');
+        return saved ? JSON.parse(saved) : [];
+    }
     
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2025/08/02/C&C++%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E9%A2%98%E6%80%BB%E7%BB%93/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
+    function saveCollections(items) {
+        localStorage.setItem('collections', JSON.stringify(items));
+    }
+    
+    function renderDetail(item, isEditMode) {
+        const content = document.getElementById('detailContent');
+        if (!item && !isAdd) {
+            content.innerHTML = '<p>条目不存在</p>';
+            return;
+        }
+        
+        if (isEditMode || isAdd) {
+            const items = loadCollections();
+            const currentItem = isAdd ? null : items.find(i => String(i.id) === String(itemId));
+            
+            content.innerHTML = `
+                <div class="edit-mode">
+                    <h2>${isAdd ? '添加新条目' : '编辑条目'}</h2>
+                    <form id="editForm" class="edit-form">
+                        <div class="form-group">
+                            <label>类别</label>
+                            <select id="typeInput">
+                                <option value="书籍"${currentItem?.type === '书籍' ? ' selected' : ''}>书籍</option>
+                                <option value="电影"${currentItem?.type === '电影' ? ' selected' : ''}>电影</option>
+                                <option value="剧集"${currentItem?.type === '剧集' ? ' selected' : ''}>剧集</option>
+                                <option value="游戏"${currentItem?.type === '游戏' ? ' selected' : ''}>游戏</option>
+                                <option value="音乐"${currentItem?.type === '音乐' ? ' selected' : ''}>音乐</option>
+                                <option value="其他"${currentItem?.type === '其他' ? ' selected' : ''}>其他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>标题</label>
+                            <input type="text" id="nameInput" value="${currentItem?.name || ''}" required>
+                        </div>
+                        <div class="form-group">
+                            <label>封面图片URL</label>
+                            <input type="text" id="imageInput" value="${currentItem?.image || ''}" placeholder="https://example.com/cover.jpg">
+                        </div>
+                        <div class="form-group">
+                            <label>简介</label>
+                            <textarea id="introInput" rows="3">${currentItem?.intro || ''}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>详细内容</label>
+                            <textarea id="detailInput" rows="10" placeholder="在这里写笔记、感想或观后感">${currentItem?.detail || ''}</textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">保存</button>
+                            <button type="button" class="btn btn-secondary" onclick="window.location.href='/collections/'">取消</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/study/">study</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2025/08/02/C&C++%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E9%A2%98%E6%80%BB%E7%BB%93/" itemprop="mainEntityOfPage"><span itemprop="name headline">C&C++经典算法题总结</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                由于本人长时间未接触算法题，出于复健的目的，本文将简单总结算法题中的一些经典题型，并辅以leetcode中的若干算法题加以说明。
-                            
-                        </p>
+            `;
+            
+            document.getElementById('editForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const items = loadCollections();
+                const data = {
+                    id: currentItem?.id || Date.now(),
+                    type: document.getElementById('typeInput').value,
+                    name: document.getElementById('nameInput').value,
+                    image: document.getElementById('imageInput').value || '/images/avatar.webp',
+                    intro: document.getElementById('introInput').value,
+                    detail: document.getElementById('detailInput').value
+                };
+                
+                if (currentItem) {
+                    const index = items.findIndex(i => String(i.id) === String(itemId));
+                    items[index] = data;
+                } else {
+                    items.push(data);
+                }
+                saveCollections(items);
+                window.location.href = '/collections/detail.html?id=' + data.id;
+            });
+        } else {
+            content.innerHTML = `
+                <div class="detail-content">
+                    <div class="detail-cover">
+                        <img src="${item.image}" onerror="this.src='/images/avatar.webp';this.onerror=null;" alt="${item.name}">
+                    </div>
+                    <div class="detail-info">
+                        <h1 class="detail-title">${item.name}</h1>
+                        <div class="detail-intro">${item.intro || '暂无简介'}</div>
                     </div>
                 </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2025-08-02T02:18:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2025-08-02</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/C-C/" rel="tag">C/C++</a>, <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" rel="tag">算法题</a>
-                            
-                        </a>
-                        
-                            <!-- 当前仅支持valine/waline自带的统计功能 -->
-                            
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2025/08/02/C&C++%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E9%A2%98%E6%80%BB%E7%BB%93/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
+                <div class="detail-body">
+                    <h2>详细内容</h2>
+                    <div class="detail-body-content">${item.detail || '还没有添加详细内容'}</div>
+                </div>
+                <div class="edit-toggle">
+                    <button class="btn btn-primary" onclick="window.location.href='/collections/detail.html?id=${item.id}&edit=true'">编辑</button>
+                </div>
+            `;
+        }
+    }
     
-
-
-
-
-
-    <div class="hidden">
-        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
-        
+    if (isAdd) {
+        renderDetail(null, true);
+    } else if (itemId) {
+        const items = loadCollections();
+        const item = items.find(i => String(i.id) === String(itemId));
+        const isEdit = urlParams.get('edit') === 'true';
+        renderDetail(item, isEdit);
+    } else {
+        document.getElementById('detailContent').innerHTML = '<p>参数错误</p>';
+    }
+})();
+</script></div>
+        </div>
+        <footer class="kratos-entry-footer clearfix">
+            <div class="footer-tag clearfix">
+                <div class="pull-date">
+                    <time datetime="2026-05-17T05:03:00.371Z" itemprop="dateModified">最后编辑：2026-05-17</time>
+                </div>
+            </div>
+        </footer>
     </div>
-
-
+    
+    
+</article>
 
         
 
@@ -260,7 +467,7 @@
                 文章
             </span>
             <span class="count">
-                2
+                1
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -268,7 +475,7 @@
                 分类
             </span>
             <span class="count">
-                2
+                1
             </span>
         </a>
         <a class="meta-item" href="/tags/">
@@ -276,7 +483,7 @@
                 标签
             </span>
             <span class="count">
-                4
+                2
             </span>
         </a>
     </div>
@@ -304,7 +511,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/study/">study</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -313,7 +520,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/C-C/" style="font-size: 0.6em;">C/C++</a> <a href="/tags/Hexo/" style="font-size: 0.6em;">Hexo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 0.6em;">博客</a> <a href="/tags/%E7%AE%97%E6%B3%95%E9%A2%98/" style="font-size: 0.6em;">算法题</a>
+        <a href="/tags/Hexo/" style="font-size: 0.6em;">Hexo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 0.6em;">博客</a>
       </div>
   </aside>
 
@@ -324,12 +531,6 @@
   <div class="tab-content">
       <ul class="list-group">
         
-        
-          
-          
-            <a class="list-group-item" href="/2025/08/02/C&C++%E7%BB%8F%E5%85%B8%E7%AE%97%E6%B3%95%E9%A2%98%E6%80%BB%E7%BB%93/"><i class="fa  fa-book"></i> C&C++经典算法题总结</a>
-            
-          
         
           
           
@@ -369,7 +570,7 @@
                     </ul>
                     <ul class="kratos-copyright">
                         <div>
-                            <li>&copy; 2025 秋月与风 版权所有.</li>
+                            <li>&copy; 2026 秋月与风 版权所有.</li>
                             <li>本站已运行<span id="span_dt">Loading...</span></li>
                         </div>
                         <div>
